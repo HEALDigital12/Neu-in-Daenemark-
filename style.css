@@ -1,8 +1,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: url('assets/flags_bg.png') no-repeat center center fixed;
-    background-size: cover;  /* Wichtig: Dies verhindert das Kacheln! */
+    background: url('assets/flags_bg_transparent.png') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
     margin: 0;
     padding: 0;
