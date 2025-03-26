@@ -1,7 +1,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f7f7f7;
+    background: url('assets/flags_bg.png') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ body {
 
 header {
     padding: 2em;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 main {
