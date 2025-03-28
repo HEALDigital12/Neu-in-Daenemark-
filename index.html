@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Regionenauswahl – HEALDIGITAL</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Regionenauswahl – HEALDIGITAL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body::before {
+      content: "";
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Denmark.svg'),
+                        url('https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg');
+      background-size: 150px, 150px;
+      background-position: top left, top right;
+      background-repeat: no-repeat, no-repeat;
+      opacity: 0.05;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>Willkommen in Dänemark</h1>
-        <nav>
-            <a href="index.html">Startseite</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Wähle eine Region</h2>
-        <ul>
-            <li><a href="regions/sued.html">Süd</a></li>
-            <li><a href="regions/mitte.html">Mitte</a></li>
-            <li><a href="regions/nord.html">Nord</a></li>
-            <li><a href="regions/fyn.html">Odense & Fünen</a></li>
-            <li><a href="regions/sjaelland.html">Kopenhagen & Sjælland</a></li>
-            <li><a href="regions/inseln.html">Andere Inseln</a></li>
-        </ul>
-    </main>
-    <footer>
-        <p>&copy; 2025 HEALDigital</p>
-    </footer>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Fixierter Header -->
+  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-10">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl sm:text-2xl font-bold">Willkommen in Dänemark</h1>
+      <nav>
+        <a href="index.html" class="text-blue-600 hover:underline">Startseite</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Platzhalter, damit Content nicht unter dem fixierten Header verschwindet -->
+  <div class="h-20"></div>
+
+  <main class="flex-grow max-w-4xl mx-auto px-4 py-10">
+    <h2 class="text-xl font-semibold mb-6">Wähle eine Region</h2>
+    <ul class="space-y-4">
+      <li><a href="regions/sued.html" class="block bg-white shadow p-4 rounded hover:bg-blue-50">Süd</a></li>
+      <li><a href="regions/mitte.html" class="block bg-white shadow p-4 rounded hover:bg-blue-50">Mitte</a></li>
+      <li><a href="regions/nord.html" class="block bg-white shadow p-4 rounded hover:bg-blue-50">Nord</a></li>
+      <li><a href="regions/fyn.html" class="block bg-white shadow p-4 rounded hover:bg-blue-50">Odense & Fünen</a></li>
+      <li><a href="regions/sjaelland.html" class="block bg-white shadow p-4 rounded hover:bg-blue-50">Kopenhagen & Sjælland</a></li>
+      <li><a href="regions/inseln.html" class="block bg-white shadow p-4 rounded hover:bg-blue-50">Andere Inseln</a></li>
+    </ul>
+  </main>
+
+  <footer class="bg-white shadow-inner text-center py-4 text-sm text-gray-500">
+    &copy; 2025 HEALDIGITAL
+  </footer>
+
 </body>
 </html>
