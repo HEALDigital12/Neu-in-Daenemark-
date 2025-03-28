@@ -1,0 +1,22 @@
+---
+const regionen = [
+  { name: "Süd", slug: "sued" },
+  { name: "Mitte", slug: "mitte" },
+  { name: "Nord", slug: "nord" },
+  { name: "Odense & Fünen", slug: "fyn" },
+  { name: "Kopenhagen & Sjælland", slug: "sjaelland" },
+  { name: "Andere Inseln", slug: "inseln" }
+];
+---
+
+<html lang="de">
+  <head>
+    <title>Regionenauswahl – HEALDIGITAL</title>
+  </head>
+  <body>
+    <h1>Wähle eine Region</h1>
+    <ul>
+      {regionen.map(r => <li><a href={`/regionen/${r.slug}`}>{r.name}</a></li>)}
+    </ul>
+  </body>
+</html>
