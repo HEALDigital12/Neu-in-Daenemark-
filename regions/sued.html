@@ -4,6 +4,34 @@
   <meta charset="UTF-8">
   <title>Region Süd – Willkommen</title>
   <link rel="stylesheet" href="/style.css">
+  <style>
+    .kommune-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      padding: 2em;
+    }
+    .kommune-grid a {
+      display: inline-block;
+      padding: 1em 2em;
+      text-decoration: none;
+      background: #c8102e;
+      color: white;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+    .kommune-grid a:hover {
+      background: #9b0e22;
+    }
+    .region-map {
+      max-width: 300px;
+      display: block;
+      margin: 2em auto;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -11,17 +39,19 @@
     <p class="subtitle">Wähle deine Kommune für gezielte Informationen</p>
   </header>
 
-  <main style="text-align: center; margin-top: 2em;">
-    <h2>Kommunen in der Region Süd</h2>
-    <ul style="list-style: none; padding: 0; font-size: 1.2em;">
-      <li><a href="/regions/sued/abenraa.html">Aabenraa</a></li>
-      <li><a href="/regions/sued/esbjerg.html">Esbjerg</a></li>
-      <li><a href="/regions/sued/fanø.html">Fanø</a></li>
-      <li><a href="/regions/sued/haderslev.html">Haderslev</a></li>
-      <li><a href="/regions/sued/sønderborg.html">Sønderborg</a></li>
-      <li><a href="/regions/sued/tønder.html">Tønder</a></li>
-    </ul>
-    <p style="margin-top: 2em;"><a href="/index.html">Zurück zur Startseite</a></p>
+  <img src="syddanmark_map.png" alt="Karte Region Syddanmark" class="region-map">
+
+  <main>
+    <h2 style="text-align: center;">Kommunen in der Region Süd</h2>
+    <div class="kommune-grid">
+      <a href="/regions/sued/abenraa.html">Aabenraa</a>
+      <a href="/regions/sued/esbjerg.html">Esbjerg</a>
+      <a href="/regions/sued/fanø.html">Fanø</a>
+      <a href="/regions/sued/haderslev.html">Haderslev</a>
+      <a href="/regions/sued/sønderborg.html">Sønderborg</a>
+      <a href="/regions/sued/tønder.html">Tønder</a>
+    </div>
+    <p style="text-align: center;"><a href="/index.html">Zurück zur Startseite</a></p>
   </main>
 
   <footer>
