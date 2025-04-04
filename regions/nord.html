@@ -1,31 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Region Nord – HEALDIGITAL</title>
-    <link rel="stylesheet" href="../../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Region Nord – Willkommen</title>
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    .button-link {
+      display: inline-block;
+      background-color: #c0392b;
+      color: white;
+      padding: 10px 20px;
+      margin: 8px 6px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .button-link:hover {
+      background-color: #a93226;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Region Nord</h1>
-        <nav><a href="/index.html">Zurück zur Startseite</a></nav>
-    </header>
-    <main>
-        <h2>Kommunen in der Region Nord</h2>
-        <ul>
-            <li><a href="/regions/nord/aalborg.html">Aalborg</a></li>
-            <li><a href="/regions/nord/hjoerring.html">Hjørring</a></li>
-            <li><a href="/regions/nord/frederikshavn.html">Frederikshavn</a></li>
-            <li><a href="/regions/nord/jammerbugt.html">Jammerbugt</a></li>
-            <li><a href="/regions/nord/broenderslev.html">Brønderslev</a></li>
-            <li><a href="/regions/nord/vesthimmerland.html">Vesthimmerland</a></li>
-            <li><a href="/regions/nord/rebild.html">Rebild</a></li>
-            <li><a href="/regions/nord/mariagerfjord.html">Mariagerfjord</a></li>
-            <li><a href="/regions/nord/thisted.html">Thisted</a></li>
-        </ul>
-    </main>
-    <footer>
-        <p>&copy; 2025 HEALDigital</p>
-    </footer>
+  <main>
+    <h1>Willkommen in der Region Nord</h1>
+    <p>Wähle deine Kommune für gezielte Informationen</p>
+
+    <section class="region-map">
+      <img src="/assets/maps/nordjylland_mit_ueberschrift.png" alt="Karte Region Nordjylland" />
+    </section>
+
+    <section class="kommunen-liste">
+      <h2>Kommunen in der Region Nord</h2>
+      <div>
+        <a href="/kommunen/aalborg.html" class="button-link">Aalborg</a>
+        <a href="/kommunen/rebild.html" class="button-link">Rebild</a>
+        <a href="/kommunen/mariagerfjord.html" class="button-link">Mariagerfjord</a>
+        <a href="/kommunen/vesthimmerland.html" class="button-link">Vesthimmerland</a>
+        <a href="/kommunen/morso.html" class="button-link">Morsø</a>
+        <a href="/kommunen/thisted.html" class="button-link">Thisted</a>
+        <a href="/kommunen/jammerbugt.html" class="button-link">Jammerbugt</a>
+        <a href="/kommunen/hjoerring.html" class="button-link">Hjørring</a>
+        <a href="/kommunen/frederikshavn.html" class="button-link">Frederikshavn</a>
+        <a href="/kommunen/broenderslev.html" class="button-link">Brønderslev</a>
+        <a href="/kommunen/laesoe.html" class="button-link">Læsø</a>
+      </div>
+    </section>
+
+    <p><a href="/index.html" class="button-link">Zurück zur Startseite</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HEALDigital</p>
+  </footer>
 </body>
 </html>
