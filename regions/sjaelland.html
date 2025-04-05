@@ -1,18 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Region Kopenhagen & Sjælland</title>
-  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffdf8;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .region-map {
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    .button-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .kommune-button {
+      background-color: #c8102e;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .kommune-button:hover {
+      background-color: #a00d24;
+    }
+
+    .back-link {
+      margin-top: 30px;
+    }
+
+    .back-link a {
+      color: #c8102e;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <img src="/regions/sjaelland-karte.png" alt="Karte von Sjælland" class="region-map">
-
+    <img src="/regions/sjaelland-karte.png" alt="Karte von Sjælland" class="region-map" />
     <h1>Kommunen in der Region Kopenhagen & Sjælland</h1>
-
     <div class="button-grid">
       <a href="kobenhavn.html" class="kommune-button">København</a>
       <a href="frederiksberg.html" class="kommune-button">Frederiksberg</a>
@@ -50,7 +112,6 @@
       <a href="ringsted.html" class="kommune-button">Ringsted</a>
       <a href="slagelse.html" class="kommune-button">Slagelse</a>
     </div>
-
     <div class="back-link">
       <a href="../regionen.html">Zurück zur Regionenauswahl</a>
     </div>
