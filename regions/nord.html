@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Nord</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffdf8;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .region-map {
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .kommune-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .kommune-grid a {
+      background-color: #c8102e;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .kommune-grid a:hover {
+      background-color: #a00d24;
+    }
+
+    .back-link {
+      margin-top: 30px;
+    }
+
+    .back-link a {
+      color: #c8102e;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Willkommen in der Region Nord</h1>
+  <p class="subtitle">Wähle deine Kommune für gezielte Informationen</p>
+
+  <img src="/regions/nordjylland.png" alt="Karte Region Nordjylland" class="region-map" />
+
+  <main>
+    <h2 style="text-align: center;">Kommunen in der Region Nord</h2>
+    <div class="kommune-grid">
+      <a href="/regions/nord/aalborg.html">Aalborg</a>
+      <a href="/regions/nord/rebild.html">Rebild</a>
+      <a href="/regions/nord/vesthimmerland.html">Vesthimmerland</a>
+      <a href="/regions/nord/jammerbugt.html">Jammerbugt</a>
+      <a href="/regions/nord/mariagerfjord.html">Mariagerfjord</a>
+      <a href="/regions/nord/frederikshavn.html">Frederikshavn</a>
+      <a href="/regions/nord/hjoerring.html">Hjørring</a>
+      <a href="/regions/nord/thy.html">Thy</a>
+      <a href="/regions/nord/laan.html">Løkken</a>
+      <a href="/regions/nord/laesoe.html">Læsø</a>
+    </div>
+
+    <div class="back-link">
+      <p><a href="../regionen.html">Zurück zur Regionenauswahl</a></p>
+    </div>
+  </main>
+</body>
+</html>
