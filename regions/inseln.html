@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Region Inseln</title>
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffdf6;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+
+    p.subtitle {
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    img.map {
+      width: 300px;
+      margin: 20px auto;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .kommune-button {
+      background-color: #d62828;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .kommune-button:hover {
+      background-color: #a81f1f;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 40px;
+      color: #d62828;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>Willkommen in der Region Inseln</h1>
+  <p class="subtitle">Wähle deine Kommune für gezielte Informationen</p>
+
+  <img class="map" src="daenemark_karte.png" alt="Karte der Region Inseln">
+
+  <div class="button-container">
+    <a class="kommune-button" href="bornholm.html">Bornholm</a>
+    <a class="kommune-button" href="laesoe.html">Laesø</a>
+    <a class="kommune-button" href="samsoe.html">Samsø</a>
+    <a class="kommune-button" href="aeroe.html">Ærø</a>
+    <a class="kommune-button" href="lolland.html">Lolland</a>
+    <a class="kommune-button" href="guldborgsund.html">Guldborgsund</a>
+    <a class="kommune-button" href="langeland.html">Langeland</a>
+  </div>
+
+  <a class="back-link" href="../../index.html">Zurück zur Regionenauswahl</a>
+
+  <footer>
+    <p>© 2025 HEALDigital</p>
+  </footer>
+</body>
+</html>
