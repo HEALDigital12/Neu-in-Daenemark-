@@ -5,57 +5,93 @@
   <title>Region Süd – Willkommen</title>
   <link rel="stylesheet" href="/style.css">
   <style>
-    .kommune-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1em;
-      padding: 2em;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffdf8;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
     }
-    .kommune-grid a {
-      display: inline-block;
-      padding: 1em 2em;
-      text-decoration: none;
-      background: #c8102e;
-      color: white;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 1.1em;
-      transition: background 0.3s;
-    }
-    .kommune-grid a:hover {
-      background: #9b0e22;
-    }
+
     .region-map {
-      max-width: 300px;
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+      margin: 20px auto;
       display: block;
-      margin: 2em auto;
+    }
+
+    .kommune-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .kommune-grid a {
+      background-color: #c8102e;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      display: block;
+    }
+
+    .kommune-grid a:hover {
+      background-color: #a00d24;
+    }
+
+    .kommune-grid.break-5:nth-child(6),
+    .kommune-grid.break-9:nth-child(10) {
+      grid-column: 1 / -1;
+    }
+
+    .back-link {
+      margin-top: 30px;
+    }
+
+    .back-link a {
+      color: #c8102e;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Willkommen in der Region Süd</h1>
-    <p class="subtitle">Wähle deine Kommune für gezielte Informationen</p>
-  </header>
+  <h1>Willkommen in der Region Süd</h1>
+  <p class="subtitle">Wähle deine Kommune für gezielte Informationen</p>
 
-  <img src="syddanmark_map.png" alt="Karte Region Syddanmark" class="region-map">
+  <img src="/regions/syddanmark_map.png" alt="Karte Region Syddanmark" class="region-map" />
 
   <main>
-    <h2 style="text-align: center;">Kommunen in der Region Süd</h2>
+    <h2>Kommunen in der Region Süd</h2>
     <div class="kommune-grid">
-      <a href="/regions/sued/aabenraa.html">Aabenraa</a>
-      <a href="/regions/sued/esbjerg.html">Esbjerg</a>
-      <a href="/regions/sued/fano.html">Fanø</a>
-      <a href="/regions/sued/haderslev.html">Haderslev</a>
-      <a href="/regions/sued/sonderborg.html">Sønderborg</a>
-      <a href="/regions/sued/tonder.html">Tønder</a>
-    </div>
-    <p style="text-align: center;"><a href="/index.html">Zurück zur Startseite</a></p>
-  </main>
+      <a class="break-5" href="aabenraa.html">Aabenraa</a>
+      <a class="break-5" href="billund.html">Billund</a>
+      <a class="break-5" href="esbjerg.html">Esbjerg</a>
+      <a class="break-5" href="fano.html">Fanø</a>
+      <a class="break-5" href="fredericia.html">Fredericia</a>
 
-  <footer>
-    <p>&copy; 2025 HEALDigital</p>
-  </footer>
+      <a class="break-9" href="haderslev.html">Haderslev</a>
+      <a class="break-9" href="kolding.html">Kolding</a>
+      <a class="break-9" href="sonderborg.html">Sønderborg</a>
+      <a class="break-9" href="tonder.html">Tønder</a>
+
+      <a href="varde.html">Varde</a>
+      <a href="vejen.html">Vejen</a>
+      <a href="vejle.html">Vejle</a>
+    </div>
+
+    <div class="back-link">
+      <p><a href="../regionen.html">Zurück zur Regionenauswahl</a></p>
+    </div>
+  </main>
 </body>
 </html>
