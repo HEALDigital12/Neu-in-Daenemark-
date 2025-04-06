@@ -2,53 +2,106 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Frederikssund Kommune</title>
+  <title>Frederikssund Kommune – Willkommen</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #c8102e;
+      color: white;
+      padding: 1.5em 1em;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .subtitle {
+      font-size: 1.1em;
+      font-weight: 300;
+    }
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    section h2 {
+      border-bottom: 2px solid #c8102e;
+      padding-bottom: 0.3em;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 0.5em 0;
+    }
+    a {
+      color: #c8102e;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 2em;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <h1>Frederikssund Kommune</h1>
+  <header>
+    <h1>Frederikssund Kommune</h1>
+    <p class="subtitle">Informationen für deinen Start in Dänemark</p>
+  </header>
   <main>
-    <h2>1. Behörden</h2>
-    <p><a href="https://frederikssund.dk/borger">Borgerservice Frederikssund</a></p>
-    <h2>2. Jobsuche</h2>
-    <ul>
-      <li><a href="https://jobnet.dk">Jobnet</a></li>
-      <li><a href="https://jobindex.dk">Jobindex</a></li>
-      <li><a href="https://stepstone.dk">StepStone</a></li>
-    </ul>
-    <h2>3. Wohnungssuche</h2>
-    <ul>
-      <li><a href="https://boligportal.dk">BoligPortal</a></li>
-      <li><a href="https://home.dk">Home.dk</a></li>
-      <li><a href="https://lejebolig.dk">Lejebolig.dk</a></li>
-    </ul>
-    <h2>4. Bankkonto</h2>
-    <ul>
-      <li><a href="https://danskebank.dk">Danske Bank</a></li>
-      <li><a href="https://nordea.dk">Nordea</a></li>
-      <li><a href="https://sydbank.dk">Sydbank</a></li>
-      <li><a href="https://andelskassen.dk">Andelskassen</a></li>
-      <li><a href="https://kreditbanken.dk">Kreditbanken</a></li>
-    </ul>
-    <h2>5. Sprache lernen</h2>
-    <ul>
-      <li><a href="https://sprogcenterkbh.dk">Sprachcenter</a></li>
-      <li><a href="https://duolingo.com">Duolingo</a></li>
-      <li><a href="https://babbel.com">Babbel</a></li>
-    </ul>
-    <h2>6. Gesundheit</h2>
-    <ul>
-      <li>Sundhedshus Frederikssund</li>
-      <li><a href="https://sundhed.dk">sundhed.dk</a></li>
-    </ul>
-    <h2>7. Alltag</h2>
-    <ul>
-      <li>Vereine, Fitness, Kultur, Restaurants</li>
-    </ul>
-    <h2>8. Verkehr</h2>
-    <ul>
-      <li><a href="https://dinoffentligetransport.dk">DOT</a></li>
-      <li><a href="https://rejseplanen.dk">Rejseplanen</a></li>
-    </ul>
+    <section>
+      <h2>Behörden</h2>
+      <ul>
+        <li><a href="https://www.frederikssund.dk" target="_blank">Offizielle Website der Kommune</a></li>
+        <li><a href="https://www.borger.dk">Borger.dk – Bürgerportal</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Jobsuche</h2>
+      <ul>
+        <li><a href="https://www.jobindex.dk" target="_blank">Jobindex.dk</a></li>
+        <li><a href="https://www.jobnet.dk" target="_blank">Jobnet.dk</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Wohnen</h2>
+      <ul>
+        <li><a href="https://www.boligportal.dk" target="_blank">BoligPortal.dk</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Sprache & Integration</h2>
+      <ul>
+        <li><a href="https://www.duolingo.com" target="_blank">Duolingo</a></li>
+        <li><a href="https://www.sprogcenter.dk" target="_blank">Sprachzentren in der Region</a></li>
+      </ul>
+    </section>
+    <a href="/region-sued.html" class="back-link">Zurück zur Regionenauswahl</a>
   </main>
+  <footer>
+    <p>&copy; 2025 HEALDigital</p>
+  </footer>
 </body>
 </html>
