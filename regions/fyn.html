@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Region Fyn</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffdf8;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .region-map {
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .kommune-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .kommune-grid a {
+      background-color: #c8102e;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .kommune-grid a:hover {
+      background-color: #a00d24;
+    }
+
+    .back-link {
+      margin-top: 30px;
+    }
+
+    .back-link a {
+      color: #c8102e;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Willkommen in der Region Fyn</h1>
+  <p class="subtitle">Wähle deine Kommune für gezielte Informationen</p>
+
+  <img src="/regions/fyn-karte.png" alt="Karte Region Fyn" class="region-map" />
+
+  <main>
+    <h2 style="text-align: center;">Kommunen in der Region Fyn</h2>
+    <div class="kommune-grid">
+      <a href="assens.html">Assens</a>
+      <a href="faaborg-midtfyn.html">Faaborg-Midtfyn</a>
+      <a href="kerteminde.html">Kerteminde</a>
+      <a href="middelfart.html">Middelfart</a>
+      <a href="nordfyns.html">Nordfyns</a>
+      <a href="nyborg.html">Nyborg</a>
+      <a href="odense.html">Odense</a>
+      <a href="svendborg.html">Svendborg</a>
+    </div>
+
+    <div class="back-link">
+      <p><a href="../regionen.html">Zurück zur Regionenauswahl</a></p>
+    </div>
+  </main>
+</body>
+</html>
