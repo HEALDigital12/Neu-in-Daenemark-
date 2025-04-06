@@ -2,10 +2,67 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Aarhus – Willkommen</title>
+  <title>Aarhus Kommune – Willkommen</title>
   <link rel="stylesheet" href="/style.css">
   <style>
-    /* gleiches CSS wie bei Süd-Region */
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #c8102e;
+      color: white;
+      padding: 1.5em 1em;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .subtitle {
+      font-size: 1.1em;
+      font-weight: 300;
+    }
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    section h2 {
+      border-bottom: 2px solid #c8102e;
+      padding-bottom: 0.3em;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 0.5em 0;
+    }
+    a {
+      color: #c8102e;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 2em;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -13,7 +70,6 @@
     <h1>Aarhus Kommune</h1>
     <p class="subtitle">Informationen für deinen Start in Dänemark</p>
   </header>
-
   <main>
     <section>
       <h2>Behörden</h2>
@@ -22,7 +78,6 @@
         <li><a href="https://www.borger.dk">Borger.dk – Bürgerportal</a></li>
       </ul>
     </section>
-
     <section>
       <h2>Jobsuche</h2>
       <ul>
@@ -30,25 +85,21 @@
         <li><a href="https://www.jobnet.dk" target="_blank">Jobnet.dk</a></li>
       </ul>
     </section>
-
     <section>
       <h2>Wohnen</h2>
       <ul>
         <li><a href="https://www.boligportal.dk" target="_blank">BoligPortal.dk</a></li>
       </ul>
     </section>
-
     <section>
       <h2>Sprache & Integration</h2>
       <ul>
         <li><a href="https://www.duolingo.com" target="_blank">Duolingo</a></li>
-        <li><a href="https://sprogcenter.dk" target="_blank">Sprachzentren in der Region</a></li>
+        <li><a href="https://www.sprogcenter.dk" target="_blank">Sprachzentren in der Region</a></li>
       </ul>
     </section>
-
-    <a href="/region-mitte.html" class="back-link">Zurück zur Regionenauswahl</a>
+    <a href="/region-sued.html" class="back-link">Zurück zur Regionenauswahl</a>
   </main>
-
   <footer>
     <p>&copy; 2025 HEALDigital</p>
   </footer>
