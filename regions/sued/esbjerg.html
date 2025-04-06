@@ -2,147 +2,108 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esbjerg Kommune</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <title>Esbjerg – Willkommen</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #c8102e;
+      color: white;
+      padding: 1.5em 1em;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .subtitle {
+      font-size: 1.1em;
+      font-weight: 300;
+    }
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    section h2 {
+      border-bottom: 2px solid #c8102e;
+      padding-bottom: 0.3em;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 0.5em 0;
+    }
+    a {
+      color: #c8102e;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 2em;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Esbjerg Kommune</h1>
-    <img src="../../images/danish_flag.png" alt="Dänische Flagge" class="kommune-map" style="max-width: 200px;">
+    <p class="subtitle">Informationen für deinen Start in Dänemark</p>
   </header>
 
-  <nav>
-    <a href="/regions/sued/" class="nav-button"><i>←</i> Zurück zur Region Süd</a>
-  </nav>
-
   <main>
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Behörden" class="category-icon">
-        <h2>1. Behörden</h2>
-      </div>
-      <div class="category-content">
-        <div class="address">
-          <p><strong>Borgerservice Esbjerg</strong><br>
-          Adresse: Torvegade 74, 6700 Esbjerg<br>
-          <a href="https://www.esbjerg.dk/borger">www.esbjerg.dk/borger</a></p>
-        </div>
-      </div>
-    </div>
+    <section>
+      <h2>Behörden</h2>
+      <ul>
+        <li><a href="https://www.esbjerg.dk" target="_blank">Offizielle Website der Kommune</a></li>
+        <li><a href="https://www.borger.dk">Borger.dk – Bürgerportal</a></li>
+      </ul>
+    </section>
 
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Jobsuche" class="category-icon">
-        <h2>2. Jobsuche</h2>
-      </div>
-      <div class="category-content">
-        <div class="address">
-          <p><strong>Jobcenter Esbjerg</strong><br>
-          Adresse: Exnersgade 24, 6700 Esbjerg<br>
-          <a href="https://www.esbjerg.dk/job-og-ledighed/jobcenter">Jobcenter Esbjerg</a></p>
-        </div>
-        <p>Jobportale:</p>
-        <ul>
-          <li><a href="https://jobnet.dk">Jobnet.dk</a></li>
-          <li><a href="https://jobindex.dk">Jobindex.dk</a></li>
-          <li><a href="https://stepstone.dk">StepStone.dk</a></li>
-        </ul>
-      </div>
-    </div>
+    <section>
+      <h2>Jobsuche</h2>
+      <ul>
+        <li><a href="https://www.jobindex.dk" target="_blank">Jobindex.dk</a></li>
+        <li><a href="https://www.jobnet.dk" target="_blank">Jobnet.dk</a></li>
+      </ul>
+    </section>
 
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Wohnungssuche" class="category-icon">
-        <h2>3. Wohnungssuche</h2>
-      </div>
-      <div class="category-content">
-        <ul>
-          <li><a href="https://www.esbjergboligforening.dk">Esbjerg Boligforening</a></li>
-          <li><a href="https://boligportal.dk">BoligPortal</a></li>
-          <li><a href="https://home.dk">Home.dk</a></li>
-        </ul>
-      </div>
-    </div>
+    <section>
+      <h2>Wohnen</h2>
+      <ul>
+        <li><a href="https://www.boligportal.dk" target="_blank">BoligPortal.dk</a></li>
+      </ul>
+    </section>
 
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Bankkonto" class="category-icon">
-        <h2>4. Bankkonto</h2>
-      </div>
-      <div class="category-content">
-        <ul>
-          <li><a href="https://danskebank.dk">Danske Bank Esbjerg</a> – Torvet 21</li>
-          <li><a href="https://nordea.dk">Nordea Esbjerg</a> – Skolegade 10</li>
-          <li><a href="https://jyskebank.dk">Jyske Bank Esbjerg</a></li>
-          <li><a href="https://www.sydbank.dk">Sydbank Esbjerg</a></li>
-          <li><a href="https://www.kreditbanken.dk">Kreditbanken</a></li>
-        </ul>
-      </div>
-    </div>
+    <section>
+      <h2>Sprache & Integration</h2>
+      <ul>
+        <li><a href="https://www.duolingo.com" target="_blank">Duolingo</a></li>
+        <li><a href="https://www.sprogcenter.dk" target="_blank">Sprachzentren in der Region</a></li>
+      </ul>
+    </section>
 
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Sprache lernen" class="category-icon">
-        <h2>5. Sprache lernen</h2>
-      </div>
-      <div class="category-content">
-        <div class="address">
-          <p><strong>Esbjerg Sprogcenter</strong><br>
-          Adresse: Spangsbjerg Kirkevej 60, 6700 Esbjerg<br>
-          <a href="https://www.esbjergsprogskole.dk">www.esbjergsprogskole.dk</a></p>
-        </div>
-        <p>Online-Kurse:</p>
-        <ul>
-          <li><a href="https://www.duolingo.com">Duolingo</a></li>
-          <li><a href="https://www.babbel.com">Babbel</a></li>
-          <li><a href="https://www.memrise.com">Memrise</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Gesundheit" class="category-icon">
-        <h2>6. Gesundheit</h2>
-      </div>
-      <div class="category-content">
-        <div class="address">
-          <p><strong>Sydvestjysk Sygehus</strong><br>
-          Adresse: Finsensgade 35, 6700 Esbjerg<br>
-          <a href="https://www.sydvestjysksygehus.dk">sydvestjysksygehus.dk</a></p>
-        </div>
-        <p><a href="https://www.sundhed.dk">Arztsuche auf sundhed.dk</a></p>
-      </div>
-    </div>
-
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Alltag" class="category-icon">
-        <h2>7. Alltag</h2>
-      </div>
-      <div class="category-content">
-        <ul>
-          <li><a href="https://www.esbjergbibliotek.dk">Bibliothek Esbjerg</a></li>
-          <li><a href="https://www.fitnessworld.com">Fitness World Esbjerg</a></li>
-          <li><a href="https://tripadvisor.dk">Restaurants auf TripAdvisor</a></li>
-          <li><a href="https://www.visitdenmark.dk/da/esbjerg">Sehenswürdigkeiten Esbjerg</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Verkehr" class="category-icon">
-        <h2>8. Verkehr</h2>
-      </div>
-      <div class="category-content">
-        <ul>
-          <li><a href="https://www.sydtrafik.dk">Sydtrafik – öffentlicher Nahverkehr</a></li>
-          <li>Bahnhof Esbjerg: direkte Züge nach Kopenhagen, Aarhus, Ribe</li>
-        </ul>
-      </div>
-    </div>
+    <a href="/region-sued.html" class="back-link">Zurück zur Regionenauswahl</a>
   </main>
 
   <footer>
