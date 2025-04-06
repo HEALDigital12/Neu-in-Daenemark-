@@ -2,9 +2,36 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Region Süd – Willkommen</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .kommune-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      padding: 2em;
+    }
+    .kommune-grid a {
+      display: inline-block;
+      padding: 1em 2em;
+      text-decoration: none;
+      background: #c8102e;
+      color: white;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+    .kommune-grid a:hover {
+      background: #9b0e22;
+    }
+    .region-map {
+      max-width: 300px;
+      display: block;
+      margin: 2em auto;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,39 +39,19 @@
     <p class="subtitle">Wähle deine Kommune für gezielte Informationen</p>
   </header>
 
-  <img src="images/danish_flag.png" alt="Dänische Flagge" class="region-map">
+  <img src="syddanmark_map.png" alt="Karte Region Syddanmark" class="region-map">
 
   <main>
-    <h2>Kommunen in der Region Süd</h2>
+    <h2 style="text-align: center;">Kommunen in der Region Süd</h2>
     <div class="kommune-grid">
-      <a href='regions/sued/aabenraa' class="kommune-button kommune-aabenraa">
-        <img src="images/icons/menu_icon.png" alt="Aabenraa Icon" width="32" height="32">
-        Aabenraa
-      </a>
-      <a href='regions/sued/esbjerg' class="kommune-button kommune-esbjerg">
-        <img src="images/icons/menu_icon.png" alt="Esbjerg Icon" width="32" height="32">
-        Esbjerg
-      </a>
-      <a href='regions/sued/fano' class="kommune-button kommune-fano">
-        <img src="images/icons/menu_icon.png" alt="Fanø Icon" width="32" height="32">
-        Fanø
-      </a>
-      <a href='regions/sued/haderslev' class="kommune-button kommune-haderslev">
-        <img src="images/icons/menu_icon.png" alt="Haderslev Icon" width="32" height="32">
-        Haderslev
-      </a>
-      <a href='regions/sued/sonderborg' class="kommune-button kommune-sonderborg">
-        <img src="images/icons/menu_icon.png" alt="Sønderborg Icon" width="32" height="32">
-        Sønderborg
-      </a>
-      <a href='regions/sued/tonder' class="kommune-button kommune-tonder">
-        <img src="images/icons/menu_icon.png" alt="Tønder Icon" width="32" height="32">
-        Tønder
-      </a>
+      <a href="/regions/sued/abenraa.html">Aabenraa</a>
+      <a href="/regions/sued/esbjerg.html">Esbjerg</a>
+      <a href="/regions/sued/fanoe.html">Fanø</a>
+      <a href="/regions/sued/haderslev.html">Haderslev</a>
+      <a href="/regions/sued/soenderborg.html">Sønderborg</a>
+      <a href="/regions/sued/toender.html">Tønder</a>
     </div>
-    <p style="text-align: center;">
-      <a href='/' class="nav-button"><i>←</i> Zurück zur Startseite</a>
-    </p>
+    <p style="text-align: center;"><a href="/index.html">Zurück zur Startseite</a></p>
   </main>
 
   <footer>
