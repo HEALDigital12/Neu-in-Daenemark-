@@ -63,6 +63,36 @@
       margin-top: 2em;
       font-weight: bold;
     }
+    .kommune-infobox {
+      background-color: #f3f3f3;
+      border-left: 6px solid #c8102e;
+      padding: 1.5em;
+      margin: 2em auto;
+      max-width: 500px;
+      border-radius: 6px;
+      text-align: left;
+    }
+    .kommune-infobox h3 {
+      margin-top: 0;
+      color: #c8102e;
+    }
+    .kommune-infobox ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .kommune-infobox li {
+      margin-bottom: 0.5em;
+    }
+    .kommune-infobox details summary {
+      cursor: pointer;
+      color: #c8102e;
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    .kommune-infobox details[open] summary {
+      margin-bottom: 0.5em;
+    }
   </style>
 </head>
 <body>
@@ -71,6 +101,28 @@
     <p class="subtitle">Informationen für deinen Start in Dänemark</p>
   </header>
   <main>
+    <div class="kommune-infobox">
+      <h3>Kurzinformationen</h3>
+      <ul>
+        <li><strong>Einwohner:</strong> ca. 99.000</li>
+<li><strong>Arbeitslosenquote:</strong> 3,7 %</li>
+<li><strong>Ø Miete:</strong> 89 DKK/m²</li>
+<li><strong>Schulen:</strong> 20</li>
+<li><strong>Kindergärten:</strong> 30</li>
+      </ul>
+      <details>
+        <summary style="margin-top: 1em;">Mehr Details anzeigen</summary>
+        <ul>
+          <li><strong>Ø Alter:</strong> 42 Jahre</li>
+<li><strong>Deutschsprachige Bürger:</strong> ca. 1.000</li>
+<li><strong>Größter Arbeitgeber:</strong> Randers Regnskov</li>
+<li><strong>Buslinien:</strong> 17</li>
+<li><strong>Nähe Aarhus:</strong> ca. 40 km</li>
+<li><strong>Vereine:</strong> über 90</li>
+        </ul>
+      </details>
+    </div>
+
     <section>
       <h2>Behörden</h2>
       <ul>
@@ -78,6 +130,7 @@
         <li><a href="https://www.borger.dk">Borger.dk – Bürgerportal</a></li>
       </ul>
     </section>
+
     <section>
       <h2>Jobsuche</h2>
       <ul>
@@ -85,12 +138,14 @@
         <li><a href="https://www.jobnet.dk" target="_blank">Jobnet.dk</a></li>
       </ul>
     </section>
+
     <section>
       <h2>Wohnen</h2>
       <ul>
         <li><a href="https://www.boligportal.dk" target="_blank">BoligPortal.dk</a></li>
       </ul>
     </section>
+
     <section>
       <h2>Sprache & Integration</h2>
       <ul>
@@ -98,8 +153,10 @@
         <li><a href="https://www.sprogcenter.dk" target="_blank">Sprachzentren in der Region</a></li>
       </ul>
     </section>
-    <a href="/region-sued.html" class="back-link">Zurück zur Regionenauswahl</a>
+
+    <a href="/region-mitte.html" class="back-link">Zurück zur Regionenauswahl</a>
   </main>
+
   <footer>
     <p>&copy; 2025 HEALDigital</p>
   </footer>
