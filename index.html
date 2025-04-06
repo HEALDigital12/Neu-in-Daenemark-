@@ -1,35 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Neu in Dänemark</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffdf8;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
- 
- <!DOCTYPE html>
- <html lang="de">
- <head>
-   <meta charset="UTF-8">
-   <title>Neu in Dänemark</title>
-   <link rel="stylesheet" href="style.css">
- </head>
- <body>
-   <header>
-     <h1>Willkommen in Dänemark</h1>
-     <p>Dein Start in ein neues Leben – einfach erklärt.</p>
-   </header>
- 
-   <img src="frauen_dk.jpeg" alt="Glückliche Däninnen" class="hero">
- 
-   <h2 style="text-align: center; margin-top: 2em;">Wähle eine Region</h2>
-   <nav class="button-container">
-     <a class="region-button" href="/regions/sued/">Süd</a>
-     <a class="region-button" href="/regions/mitte/">Mitte</a>
-     <a class="region-button" href="/regions/nord/">Nord</a>
-     <a class="region-button" href="/regions/fyn/">Odense & Fünen</a>
-     <a class="region-button" href="/regions/sjaelland/">Kopenhagen & Sjælland</a>
-     <a class="region-button" href="/regions/inseln/">Inseln</a>
-   </nav>
- 
-   <img src="illustration_stadt.jpeg" alt="Bunte Illustration" class="hero">
- 
-   <footer>
-     <p>&copy; 2025 HEALDigital</p>
-     <img src="happy_user.jpeg" alt="Glücklicher Nutzer mit Smartphone" style="width: 100px; border-radius: 50%; margin-top: 1em;">
-   </footer>
- </body>
- </html>
+    header {
+      background-color: #c8102e;
+      color: white;
+      padding: 2em 1em;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      margin: 0.5em 0 0;
+    }
+
+    .hero {
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 2em auto;
+      border-radius: 10px;
+    }
+
+    h2 {
+      margin-top: 2em;
+      font-size: 1.5em;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      max-width: 600px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+
+    .region-button {
+      background-color: #c8102e;
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      display: block;
+    }
+
+    .region-button:hover {
+      background-color: #a00d24;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      padding: 2em 1em;
+      margin-top: 3em;
+    }
+
+    footer img {
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Willkommen in Dänemark</h1>
+    <p>Dein Start in ein neues Leben – einfach erklärt.</p>
+  </header>
+
+  <img src="frauen_dk.jpeg" alt="Glückliche Däninnen" class="hero">
+
+  <h2>Wähle eine Region</h2>
+  <nav class="button-container">
+    <a class="region-button" href="/regions/sued/">Süd</a>
+    <a class="region-button" href="/regions/mitte/">Mitte</a>
+    <a class="region-button" href="/regions/nord/">Nord</a>
+    <a class="region-button" href="/regions/fyn/">Odense & Fünen</a>
+    <a class="region-button" href="/regions/sjaelland/">Kopenhagen & Sjælland</a>
+    <a class="region-button" href="/regions/inseln/">Inseln</a>
+  </nav>
+
+  <img src="illustration_stadt.jpeg" alt="Bunte Illustration" class="hero">
+
+  <footer>
+    <p>&copy; 2025 HEALDigital</p>
+    <img src="happy_user.jpeg" alt="Glücklicher Nutzer mit Smartphone">
+  </footer>
+</body>
+</html>
