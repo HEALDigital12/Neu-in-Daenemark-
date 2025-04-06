@@ -2,154 +2,120 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aabenraa Kommune</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <title>Aabenraa – Willkommen</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #c8102e;
+      color: white;
+      padding: 1.5em 1em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+      font-weight: 300;
+    }
+
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    section h2 {
+      border-bottom: 2px solid #c8102e;
+      padding-bottom: 0.3em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 0.5em 0;
+    }
+
+    a {
+      color: #c8102e;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 2em;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Aabenraa Kommune</h1>
-    <img src="../../images/danish_flag.png" alt="Dänische Flagge" class="kommune-map" style="max-width: 200px;">
+    <p class="subtitle">Informationen für deinen Start in Dänemark</p>
   </header>
 
-  <nav>
-    <a href="/regions/sued/" class="nav-button"><i>←</i> Zurück zur Region Süd</a>
-  </nav>
-
   <main>
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Behörden" class="category-icon">
-        <h2>1. Behörden</h2>
-      </div>
-      <div class="category-content">
-        <div class="address">
-          <p>Borgerservice Aabenraa, Skelbækvej 2</p>
-        </div>
-      </div>
-    </div>
+    <section>
+      <h2>Behörden</h2>
+      <ul>
+        <li><a href="https://www.aabenraa.dk" target="_blank">Offizielle Website der Kommune</a></li>
+        <li><a href="https://www.borger.dk">Borger.dk – Bürgerportal</a></li>
+      </ul>
+    </section>
 
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Jobsuche" class="category-icon">
-        <h2>2. Jobsuche</h2>
-      </div>
-      <div class="category-content">
-        <div class="address">
-          <p>Jobcenter Aabenraa, Kallemosen 20</p>
-        </div>
-        <p>Weitere Jobportale:</p>
-        <ul>
-          <li>Jobnet</li>
-          <li>Jobindex</li>
-          <li>StepStone</li>
-        </ul>
-      </div>
-    </div>
+    <section>
+      <h2>Jobsuche</h2>
+      <ul>
+        <li><a href="https://www.jobindex.dk" target="_blank">Jobindex.dk</a></li>
+        <li><a href="https://www.jobnet.dk" target="_blank">Jobnet.dk</a></li>
+      </ul>
+    </section>
 
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Wohnungssuche" class="category-icon">
-        <h2>3. Wohnungssuche</h2>
-      </div>
-      <div class="category-content">
-        <p>Wohnungsgesellschaften:</p>
-        <ul>
-          <li>BoligSyd</li>
-          <li>Aabenraa Andelsboligforening</li>
-        </ul>
-        <p>Wohnungsportale:</p>
-        <ul>
-          <li>BoligPortal</li>
-          <li>Home.dk</li>
-        </ul>
-      </div>
-    </div>
+    <section>
+      <h2>Wohnen</h2>
+      <ul>
+        <li><a href="https://www.boligportal.dk" target="_blank">BoligPortal.dk</a></li>
+      </ul>
+    </section>
 
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Bankkonto" class="category-icon">
-        <h2>4. Bankkonto</h2>
-      </div>
-      <div class="category-content">
-        <ul>
-          <li>Sydbank (Peberlyk 4)</li>
-          <li>Kreditbanken</li>
-          <li>Nordea</li>
-          <li>Jyske Bank</li>
-        </ul>
-      </div>
-    </div>
+    <section>
+      <h2>Sprache & Integration</h2>
+      <ul>
+        <li><a href="https://www.duolingo.com" target="_blank">Duolingo</a></li>
+        <li><a href="https://www.sprogcenter.dk" target="_blank">Sprachzentren in der Region</a></li>
+      </ul>
+    </section>
 
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Sprache lernen" class="category-icon">
-        <h2>5. Sprache lernen</h2>
-      </div>
-      <div class="category-content">
-        <p>Vor Ort:</p>
-        <ul>
-          <li>AOF Sprogcenter Aabenraa</li>
-        </ul>
-        <p>Online-Kurse:</p>
-        <ul>
-          <li>Duolingo</li>
-          <li>Babbel</li>
-          <li>Memrise</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Gesundheit" class="category-icon">
-        <h2>6. Gesundheit</h2>
-      </div>
-      <div class="category-content">
-        <p>Krankenhaus:</p>
-        <ul>
-          <li>Sygehus Sønderjylland Aabenraa</li>
-        </ul>
-        <p>Gesundheitsportal:</p>
-        <ul>
-          <li>sundhed.dk</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Alltag" class="category-icon">
-        <h2>7. Alltag</h2>
-      </div>
-      <div class="category-content">
-        <ul>
-          <li>Vereine</li>
-          <li>Fitness World</li>
-          <li>Altstadt</li>
-          <li>Fjord</li>
-          <li>Museen</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="category-section">
-      <div class="category-header">
-        <img src="../../images/icons/menu_icon.png" alt="Verkehr" class="category-icon">
-        <h2>8. Verkehr</h2>
-      </div>
-      <div class="category-content">
-        <p>Öffentlicher Verkehr:</p>
-        <ul>
-          <li>Sydtrafik</li>
-        </ul>
-        <p>Bahnverbindungen:</p>
-        <ul>
-          <li>Bahnhof Rødekro</li>
-          <li>E45 (Autobahn)</li>
-        </ul>
-      </div>
-    </div>
+    <a href="/region-sued.html" class="back-link">Zurück zur Regionenauswahl</a>
   </main>
 
   <footer>
